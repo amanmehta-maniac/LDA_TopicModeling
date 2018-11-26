@@ -1,5 +1,7 @@
+import gensim
 from nltk.stem import WordNetLemmatizer, SnowballStemmer
 
+stemmer = SnowballStemmer('english')
 
 def lemmatize_stemming(text):
     return stemmer.stem(WordNetLemmatizer().lemmatize(text, pos='v'))
